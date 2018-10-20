@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/addnote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/notedate"
+        custom:font="@string/font_avenir_book"
+        android:clickable="true"
+        android:hint="Select Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?android:attr/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:textColorLink="?android:attr/colorPrimary" />
+<!--android:foreground="@android:color/background_light"-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtTitle"
+        android:layout_height="50sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="5sp"
+        android:hint="Enter Title"
+        android:background="@drawable/txtback"
+        android:layout_below="@+id/notedate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="?android:attr/colorPrimary"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/txtMessage"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:hint="Start typing here..."
+        android:paddingLeft="10sp"
+        android:layout_height="200sp"
+        android:background="@drawable/txtback"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/txtTitle"
+        android:scrollbars="vertical"
+        android:textColor="?android:attr/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="1dp">
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginLeft="20sp"
+        android:text="Reset"
+        android:background="@drawable/txtback"
+        android:id="@+id/btnCloseAddNote"
+        android:textColor="?android:attr/colorPrimary"
+        android:textStyle="normal|italic"/>
+
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="20sp"
+            android:text="Save"
+            android:background="@drawable/txtback"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/btnCloseAddNote"
+            android:layout_marginStart="16dp"
+            android:id="@+id/btnSaveAddNote"
+            android:textColor="?android:attr/colorPrimary"
+            android:textStyle="normal|italic"/>
+    </RelativeLayout>
+    <!--<CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/calendarView" />-->
+
+</RelativeLayout>
+</ScrollView>

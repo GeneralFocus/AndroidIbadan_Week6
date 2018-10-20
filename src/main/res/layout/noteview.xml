@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Diary Content Here"
+        android:textColor="?android:attr/colorPrimary"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:id="@+id/date_view"
+        android:clickable="true"
+        android:hint="Select Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?android:attr/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:textColorLink="?android:attr/colorPrimary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30sp"/>
+    <EditText
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginBottom="5dp"
+        android:text="ksdhaksdghkadgakg"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="5sp"
+        android:background="@drawable/txtback"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text:"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/text_view"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:hint="Start typing here..."
+        android:paddingLeft="10sp"
+        android:layout_height="150sp"
+        android:background="@drawable/txtback"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/txtTitle"
+        android:scrollbars="vertical"
+        android:textColor="?android:attr/colorPrimary"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="20sp"
+            android:text="Back"
+            android:background="@drawable/txtback"
+            android:id="@+id/btnClose"
+            android:textColor="?android:attr/colorPrimary"
+            android:textStyle="normal|italic"/>
+
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="20sp"
+            android:text="Update"
+            android:background="@drawable/txtback"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/btnClose"
+            android:layout_marginStart="16dp"
+            android:id="@+id/btnUpdateDiary"
+            android:textColor="?android:attr/colorPrimary"
+            android:textStyle="normal|italic"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hhh"
+        android:textColor="#888"
+        android:textSize="12sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/noteid"
+        android:layout_marginRight="30sp"/>
+   </LinearLayout>
+
+</ScrollView>
